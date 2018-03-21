@@ -2,7 +2,7 @@ require 'sinatra/base'
 
 class FTRatings < Sinatra::Base
     get '/' do
-        'We welcome your feedback!'
+        erb :index
     end
 
     run! if app_file == $0
