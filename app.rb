@@ -1,8 +1,8 @@
-require 'sintra/base'
+require 'sinatra/base'
 
-class FTRatings < Sinatra::base
+class FTRatings < Sinatra::Base
     get '/' do
-        'test'
+        'We welcome your feedback!'
     end
 
     run! if app_file == $0
