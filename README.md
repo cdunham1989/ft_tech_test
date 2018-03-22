@@ -43,4 +43,6 @@ For now I have stored the ratings in an array within the application. But I may 
 
 I have also opted to focus more time on developing the web app and getting it hosted in the cloud rather than giving it the Financial Times branding. This will be something I add in later if I have time.
 
-I have also decided to attempt to implement the functionality to be able to display all the ratings that have been received so far. 
+I have also decided to attempt to implement the functionality to be able to display all the ratings that have been received so far.
+
+I am going to now spend a bit of time refactoring and changing the names of some of the objects/methods to make them a bit more clear. The web app is still very bare bones but all the functionality I want from it is there. 
