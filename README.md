@@ -39,4 +39,8 @@ At the moment my application is very simple. There is a landing page which asks 
 
 At this point I have not yet installed any sort of database to store the ratings and I am weighing up whether or not a database for this site is my best option. I am unsure how to host a database in the cloud as it is something I have, as of yet, not learned about in any way other than using Firebase with Swift in my final project at Makers Academy.
 
-For now I am leaning towards storing the ratings in an array within the application. But I may tear this functionality out at a later date and replace it with a database hosted in the cloud with the application.
+For now I have stored the ratings in an array within the application. But I may tear this functionality out at a later date and replace it with a database hosted in the cloud with the application.
+
+I have also opted to focus more time on developing the web app and getting it hosted in the cloud rather than giving it the Financial Times branding. This will be something I add in later if I have time.
+
+I have also decided to attempt to implement the functionality to be able to display all the ratings that have been received so far. 
