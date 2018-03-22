@@ -1,12 +1,16 @@
 require 'sinatra/base'
+require './lib/ratings'
 
 class FTRatings < Sinatra::Base
+
+    ratings = Ratings.new
 
     get '/' do
         erb :index
     end
 
     post '/create-new-rating' do
+        ratings.create({ :name => params[:name], :rating => params[:rating] })
         redirect '/confirmation'
     end
 
