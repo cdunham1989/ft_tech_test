@@ -1,1 +1,33 @@
-"We welcome your feedback!"
+<h1> We welcome your feedback! </h1>
+
+<p> Here at the Financial Times we are interested in receiving your feedback on our site. <br>
+    Please fill in the form below to let us know an overall impression of your experience with us. 
+</p>
+
+<br>
+
+<form action="/create-new-rating" method="post">
+  <div>
+    <input type="text" name="name" placeholder="Name (Optional)" />
+    <br>
+  </div>
+  <div>
+    <p> Please rate your experience of the Financial Times website: <br>
+       (1 being the highest rating and 4 being the lowest) </p>
+    <input type="radio" id="ratingChoice1" name="rating" value="1" required />
+    <label for="ratingChoice1">1</label>
+
+    <input type="radio" id="ratingChoice2" name="rating" value="2" />
+    <label for="ratingChoice2">2</label>
+
+    <input type="radio" id="ratingChoice3" name="rating" value="3" />
+    <label for="ratingChoice3">3</label>
+
+    <input type="radio" id="ratingChoice4" name="rating" value="4" />
+    <label for="ratingChoice1">4</label>
+  </div>
+  <br>
+  <div>
+    <input type="submit" value="Submit" />
+  </div>
+</form>
