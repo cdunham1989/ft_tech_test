@@ -18,5 +18,9 @@ class FTRatings < Sinatra::Base
         erb :confirmation
     end
 
+    get '/all_ratings' do
+        erb :all_ratings
+    end
+
     run! if app_file == $0
 end
