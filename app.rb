@@ -19,6 +19,7 @@ class FTRatings < Sinatra::Base
     end
 
     get '/all_ratings' do
+        @ratings = ratings.view_all
         erb :all_ratings
     end
 
