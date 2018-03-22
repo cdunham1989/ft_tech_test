@@ -2,8 +2,6 @@ require 'sinatra/base'
 
 class FTRatings < Sinatra::Base
 
-    ratings = []
-
     get '/' do
         erb :index
     end
