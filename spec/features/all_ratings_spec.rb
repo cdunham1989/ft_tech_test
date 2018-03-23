@@ -16,6 +16,16 @@ feature 'Viewing All Ratings' do
         expect(page).to have_content ('Name: Mark  Rating: 2')
     end
 
+    scenario 'Name field should not show up for ratings where name was not given' do
+        visit('/')
+        choose('1')
+        click_button ('Submit')
+        click_button('Back')
+        click_button('View All Ratings')
+        expect(page).not_to have_content ('Name: Chris Rating: 1')
+        expect(page).to have_content ('Rating: 2')
+    end
+
     scenario 'A user can get back to the homepage from this page' do
         visit('/all_ratings')
         click_button ('Back')
