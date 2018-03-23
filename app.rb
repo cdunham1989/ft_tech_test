@@ -10,7 +10,7 @@ class FTRatings < Sinatra::Base
     end
 
     post '/create-new-rating' do
-        ratings.create({ :name => params[:name], :rating => params[:rating] })
+        ratings.submit_rating({ :name => params[:name], :rating => params[:rating] })
         redirect '/confirmation'
     end
 

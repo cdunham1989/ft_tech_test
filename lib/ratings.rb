@@ -5,7 +5,7 @@ class Ratings
         @all_ratings = all_ratings
     end
 
-    def create(user_rating)
+    def submit_rating(user_rating)
         @all_ratings.push(user_rating)
     end
 

@@ -45,4 +45,10 @@ I have also opted to focus more time on developing the web app and getting it ho
 
 I have also decided to attempt to implement the functionality to be able to display all the ratings that have been received so far.
 
-I am going to now spend a bit of time refactoring and changing the names of some of the objects/methods to make them a bit more clear. The web app is still very bare bones but all the functionality I want from it is there. 
+I am going to now spend a bit of time refactoring and changing the names of some of the objects/methods to make them a bit more clear. The web app is still very bare bones but all the functionality I want from it is there.
+
+
+Things to solve:
+
+- edge case where a user does not enter a name in the name field.
+- refactoring view_all out of the ratings class and implementing the functionality in the all_ratings.erb file. 
