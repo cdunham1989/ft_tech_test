@@ -4,14 +4,25 @@ Build a website hosted in the cloud (e.g. AWS, Google, Heroku) that asks for and
 
 Provide a diagram of your site architecture showing key components that illustrate your approach.
 
+
 ### Optional Features
 For bonus credit consider using one or more of these techniques:  
 - Templated infrastructure as code.  
 - Automated testing.
 - Origami  Components/FT look and feel.
 - The ability to view the ratings/results.
+   
+# Running the Application as a Docker Container
 
-# User Stories
+To build the application as a docker container:  
+`docker build -t ft_ratings .`
+
+To run the application as a docker container:  
+`docker run --rm -itP ft_ratings`
+
+If you're interested in running the application without docker consult the Dockerfile for the commands needed.
+
+# Web App User Stories
 
 ```
 As a user
@@ -31,6 +42,7 @@ So I can see other users ratings
 I would like to be able to see a breakdown of all ratings
 ```
 
+
 # Process
 
 To begin with I started setting up the web application. I decided to choose Ruby to do this as I felt more comfortable using this language for the web app. I wanted to get the bare-bones application up and running as quickly as possible so I could spend more time focussing on the cloud hosting of the application.
@@ -47,4 +59,4 @@ I have also decided to attempt to implement the functionality to be able to disp
 
 I am going to now spend a bit of time refactoring and changing the names of some of the objects/methods to make them a bit more clear. The web app is still very bare bones but all the functionality I want from it is there.
 
-All edge cases and refactoring completed. Now moving on to storing the web application inside a docker image.
+All edge cases and refactoring completed. Now moving on to storing the web application inside a docker container.
