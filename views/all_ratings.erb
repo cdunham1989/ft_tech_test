@@ -1,6 +1,10 @@
 <h1> Here are all the ratings submitted so far: </h1>
 
-<%= @ratings %>
+<%= ratings_to_display = ""
+    @all_ratings.each do |rating|
+        ratings_to_display += "Name: #{rating[:name]}  Rating: #{rating[:rating]}\n"
+    end
+    ratings_to_display %>
 
 <form action="/">
   <input type="submit" value="Back">

@@ -12,12 +12,4 @@ describe Ratings do
             expect(@ratings.all_ratings).to include ({ :name => 'Chris', :rating => 1})
         end
     end
-
-    describe 'view all' do
-        it 'can show all the ratings that have been created' do
-            @ratings.submit_rating({ :name => 'Chris', :rating => 1 })
-            @ratings.submit_rating({ :name => 'John', :rating => 3 })
-            expect(@ratings.view_all).to eq("Name: Chris  Rating: 1\nName: John  Rating: 3\n")
-        end
-    end
 end
