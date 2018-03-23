@@ -51,4 +51,3 @@ I am going to now spend a bit of time refactoring and changing the names of some
 Things to solve:
 
 - edge case where a user does not enter a name in the name field.
-- refactoring view_all out of the ratings class and implementing the functionality in the all_ratings.erb file. 
