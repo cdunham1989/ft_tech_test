@@ -1,0 +1,12 @@
+{
+    "AWSEBDockerrunVersion": "1",
+    "Image": {
+      "Name": "cdunham1989/ft_ratings",
+      "Update": "true"
+    },
+    "Ports": [
+      {
+        "ContainerPort": "9292"
+      }
+    ]
+  }

@@ -11,6 +11,10 @@ For bonus credit consider using one or more of these techniques:
 - Automated testing.
 - Origami  Components/FT look and feel.
 - The ability to view the ratings/results.
+
+# Accessing the Web Application
+
+http://cdunham1989-ftratings-test.eu-west-1.elasticbeanstalk.com/
    
 # Running the Application as a Docker Container
 
@@ -59,4 +63,6 @@ I have also decided to attempt to implement the functionality to be able to disp
 
 I am going to now spend a bit of time refactoring and changing the names of some of the objects/methods to make them a bit more clear. The web app is still very bare bones but all the functionality I want from it is there.
 
-All edge cases and refactoring completed. Now moving on to storing the web application inside a docker container.
+All edge cases and refactoring completed. Now moving on to storing the web application inside a docker container and pushing this to docker hub so that I can get it working with AWS.
+
+Now that I have done that I have created an elastic beanstalk application on AWS and have copied an image of the application from docker hub into a container running here: http://cdunham1989-ftratings-test.eu-west-1.elasticbeanstalk.com/
