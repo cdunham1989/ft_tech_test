@@ -58,8 +58,10 @@ I am going to now spend a bit of time refactoring and changing the names of some
 
 All edge cases and refactoring completed. Now moving on to storing the web application inside a docker container and pushing this to docker hub so that I can get it working with AWS.
 
-Now that I have done that I have created an elastic beanstalk application on AWS and have copied an image of the application from docker hub into a container running here:
+Now that I have done that I have created an elastic beanstalk application on AWS. I decided to use Amazon Elastic Beanstalk due to its ease of entry. It seems to be a simple and effective way to host a docker container in AWS. It has less control than using ECS,but that isn't something I really need for this simple web app. I copied an image of the application from docker hub into a container running at the following address:
 http://cdunham1989-ftratings-test.eu-west-1.elasticbeanstalk.com/
+
+My next step is to attempt to template this process using Terraform to meet the 'infrastructure as code' optional feature.
 
 ## Optional Features
 
