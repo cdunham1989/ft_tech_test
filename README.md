@@ -4,7 +4,6 @@ Build a website hosted in the cloud (e.g. AWS, Google, Heroku) that asks for and
 
 Provide a diagram of your site architecture showing key components that illustrate your approach.
 
-
 ### Optional Features
 For bonus credit consider using one or more of these techniques:  
 - Templated infrastructure as code.  
@@ -14,17 +13,31 @@ For bonus credit consider using one or more of these techniques:
 
 # Accessing the Web Application
 
-http://cdunham1989-ftratings-test.eu-west-1.elasticbeanstalk.com/
+http://cdunham1989-ftratings.eu-west-1.elasticbeanstalk.com
    
 # Running the Application as a Docker Container
 
 To build the application as a docker container:  
-`docker build -t ft_ratings .`
+`docker build -t cdunham1989/ft_ratings .`
 
 To run the application as a docker container:  
-`docker run --rm -itP ft_ratings`
+`docker run --rm -itP cdunham1989/ft_ratings`
+
+To push this application to docker hub:  
+`docker push cdunham1989/ft_ratings`
 
 If you're interested in running the application without docker consult the Dockerfile for the commands needed.
+
+# Building Infrastructure using Terraform
+
+To setup Terraform within the project:
+`terraform init`
+
+To check the infrastructure being created by Terraform:
+`terraform plan`
+
+To implement the infrastructure use
+`terraform apply`
 
 # Web App User Stories
 
@@ -61,7 +74,7 @@ All edge cases and refactoring completed. Now moving on to storing the web appli
 Now that I have done that I have created an elastic beanstalk application on AWS. I decided to use Amazon Elastic Beanstalk due to its ease of entry. It seems to be a simple and effective way to host a docker container in AWS. It has less control than using ECS,but that isn't something I really need for this simple web app. I copied an image of the application from docker hub into a container running at the following address:
 http://cdunham1989-ftratings-test.eu-west-1.elasticbeanstalk.com/
 
-My next step is to attempt to template this process using Terraform to meet the 'infrastructure as code' optional feature.
+I have now used Terraform to implement the infrastructure for hosting the web app in AWS.
 
 ## Optional Features
 
@@ -69,9 +82,9 @@ The ability to view the ratings/results - This functionality has been implemente
 
 Automated testing - Feature tests have been completed for all three of the pages within the web application.
 
-Templated infrastructure as code - I currently have built the beanstalk application manually but I am going to attempt to build this using Terraform instead if I have time.
+Templated infrastructure as code - I am now using Terraform to generate the infrastructure for hosting the web application in Amazon Elastic Beanstalk on AWS.
 
-Origami Components/FT look and feel - I have currently opted to focus more time on developing the web app and getting it hosted in the cloud rather than using CSS to improve the look of it or by giving it the Financial Times branding. This will be something I add in later if I have time.
+Origami Components/FT look and feel - I opted to focus more time on developing the web app and getting it hosted in the cloud using Terraform. Using Origami/CSS to improve the look of the app, giving it the Financial Times branding is something I wish to add in later if I have time.
 
 ## Other things I would improve if I had time:
 
