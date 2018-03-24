@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/cdunham1989/ft_tech_test.svg?branch=master)](https://travis-ci.org/cdunham1989/ft_tech_test)
+
 # Exercise
 
 Build a website hosted in the cloud (e.g. AWS, Google, Heroku) that asks for and stores a simple rating score for using ft.com.
