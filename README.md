@@ -86,13 +86,13 @@ Automated testing - Feature tests have been completed for all three of the pages
 
 Templated infrastructure as code - I am now using Terraform to generate the infrastructure for hosting the web application in Amazon Elastic Beanstalk on AWS.
 
-Origami Components/FT look and feel - I opted to focus more time on developing the web app and getting it hosted in the cloud using Terraform. Using Origami/CSS to improve the look of the app, giving it the Financial Times branding is something I wish to add in later if I have time.
+Origami Components/FT look and feel - I opted to focus more time on developing the web app and getting it hosted in the cloud using Terraform. Using Origami/CSS to give it the Financial Times branding is something I would have liked to have added in later if I had had the time.
 
 ## Other things I would improve if I had time:
 
 Database - If I have time, the last thing I would like to try is to rebuild the web apps basic structure to save the ratings inside a database. This would mean I would have to host this database inside a seperate docker container, or use an Amazon RDS instead.
 
-Inconsistencies - The naming of my routes within my app are unfortunately not all consistent at this moment in time. I noticed this at a point where it was too late to change and implement the changes across my entire infrastructure. If I had more time then this is something else I would've liked to improve.
+Inconsistencies - The naming of my routes within my app are unfortunately not all consistent at this moment in time. I noticed this at a point where it was too late to change my code and implement the changes across my entire infrastructure. If I had more time then this is something else I would've liked to improve.
 
 # Architecture
 
