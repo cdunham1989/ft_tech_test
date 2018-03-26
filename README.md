@@ -61,6 +61,16 @@ So I can see other users ratings
 I would like to be able to see a breakdown of all ratings
 ```
 
+# Architecture
+
+## Architecture Diagram
+
+![Architecture Diagram](diagram.png "Architecture Diagram")
+
+## Terraform Architecture
+
+![Terraform Architecture](graph.png "Terraform Architecture")
+
 # Process
 
 To begin with I started setting up the web application. I decided to choose Ruby to do this as I felt more comfortable using this language for the web app. I wanted to get the bare-bones application up and running as quickly as possible so I could spend more time focussing on the cloud hosting of the application.
@@ -91,15 +101,3 @@ Origami Components/FT look and feel - I opted to focus more time on developing t
 ## Other things I would improve if I had time:
 
 Database - If I have time, the last thing I would like to try is to rebuild the web apps basic structure to save the ratings inside a database. This would mean I would have to host this database inside a seperate docker container, or use an Amazon RDS instead.
-
-Inconsistencies - The naming of my routes within my app are unfortunately not all consistent at this moment in time. I noticed this at a point where it was too late to change my code and implement the changes across my entire infrastructure. If I had more time then this is something else I would've liked to improve.
-
-# Architecture
-
-## Architecture Diagram
-
-![Architecture Diagram](diagram.png "Architecture Diagram")
-
-## Terraform Architecture
-
-![Terraform Architecture](graph.png "Terraform Architecture")
