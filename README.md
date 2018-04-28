@@ -15,7 +15,9 @@ For bonus credit consider using one or more of these techniques:
 
 # Accessing the Web Application
 
-http://cdunham1989-ftratings.eu-west-1.elasticbeanstalk.com
+http://cdunham1989-ftratings.eu-west-1.elasticbeanstalk.com [deprecated]
+
+The link has now been removed due to the tech test being completed.
    
 # Running the Application as a Docker Container
 
